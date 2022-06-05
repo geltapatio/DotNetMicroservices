@@ -3,7 +3,7 @@ using Discount.API.Repositories;
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
-var test = builder.Configuration.MigrateDatabase();
+builder.Configuration.MigrateDatabase();
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
