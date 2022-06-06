@@ -4,15 +4,15 @@ namespace Basket.API.GrpcServices
 {
     public class DiscountGrpcServiceClient
     {
-        private readonly DiscountProtoService.DiscountProtoServiceClient _discountProtoServiceClient;
+        private readonly DiscountProtoService.DiscountProtoServiceClient _discountProtoService;
         public DiscountGrpcServiceClient(DiscountProtoService.DiscountProtoServiceClient discountProtoServiceClient)
         {
-            _discountProtoServiceClient = discountProtoServiceClient ?? throw new ArgumentNullException(nameof(discountProtoServiceClient));
+            _discountProtoService = discountProtoServiceClient ?? throw new ArgumentNullException(nameof(discountProtoServiceClient));
         }
-
+        
         public async Task<CouponModel> GetDiscount(string productName)
         {
-            return await _discountProtoServiceClient.GetDiscountAsync(new GetDiscountRequest { ProductName = productName });
+            return await _discountProtoService.GetDiscountAsync(new GetDiscountRequest { ProductName = productName });
         }
     }
 }
