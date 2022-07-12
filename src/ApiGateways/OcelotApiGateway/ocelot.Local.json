@@ -1,4 +1,3 @@
-
 {
   "Routes": [
     //Catalog API
@@ -7,8 +6,8 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "catalog.api",
-          "Port": "80"
+          "Host": "localhost",
+          "Port": "8000"
         }
       ],
       "UpstreamPathTemplate": "/Catalog",
@@ -20,8 +19,8 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "catalog.api",
-          "Port": "80"
+          "Host": "localhost",
+          "Port": "8000"
         }
       ],
       "UpstreamPathTemplate": "/Catalog/{id}",
@@ -32,8 +31,8 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "catalog.api",
-          "Port": "80"
+          "Host": "localhost",
+          "Port": "8000"
         }
       ],
       "UpstreamPathTemplate": "/Catalog/GetProductByCategory/{category}",
@@ -45,8 +44,8 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "basket.api",
-          "Port": "80"
+          "Host": "localhost",
+          "Port": "8001"
         }
       ],
       "UpstreamPathTemplate": "/Basket/{userName}",
@@ -57,8 +56,8 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "basket.api",
-          "Port": "80"
+          "Host": "localhost",
+          "Port": "8001"
         }
       ],
       "UpstreamPathTemplate": "/Basket",
@@ -69,8 +68,8 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "basket.api",
-          "Port": "80"
+          "Host": "localhost",
+          "Port": "8001"
         }
       ],
       "UpstreamPathTemplate": "/Basket/Checkout",
@@ -89,8 +88,8 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "discount.api",
-          "Port": "80"
+          "Host": "localhost",
+          "Port": "8002"
         }
       ],
       "UpstreamPathTemplate": "/Discount/{productName}",
@@ -101,8 +100,8 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "discount.api",
-          "Port": "80"
+          "Host": "localhost",
+          "Port": "8002"
         }
       ],
       "UpstreamPathTemplate": "/Discount",
@@ -114,8 +113,8 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "ordering.api",
-          "Port": "80"
+          "Host": "localhost",
+          "Port": "8004"
         }
       ],
       "UpstreamPathTemplate": "/Order/{userName}",
